@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+html,body{
+    min-height: 100%;
+    width: 100%;
+    background-color: beige;
+    overflow-x: clip;
+    position: relative;
+    z-index: -10;
+}
+main{
+    min-height: 100vh;
+    width: 100%;
+
+}
+.nav-items{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 6vw;
+    padding-right: 10vw;
+    /* background-color: lightblue; */
+}
+.nav-items a{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    font-size: 0.875rem;
+    display: inline-block;
+}
+.nleft {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+.nmid{
+    margin-right: 5rem;
+}
+/* hero section started  */
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    height: calc(100vh - 80px);
+    width: 100%;
+    padding: 0 6vw;
+    padding-right: 10vw;
+    margin: 3vw 0;
+    margin-top: 13vw;
+    
+}
+.hero-left, .hero-mid, .hero-right{
+    width: 33vw;
+}
+
+.hero-left .sustainability{
+    /* min-height: 50vh; */
+    width: 12vw;
+    /* background-color: aqua; */
+
+}
+.hero-left .sustainability .heading {
+    display: flex;
+    flex-direction: column;
+}
+.hero-left .sustainability .heading h3{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.hero-left .sustainability .heading p{
+    font-weight: 300;
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+.hero-left .sustainability .img-container{
+    height: 38vh;
+    width: 100%;
+    /* background-color: yellow; */
+    margin-top: 1rem;
+}
+.hero-left .sustainability .img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.hero-mid{
+    /* background-color: lightcoral; */
+    position: relative;
+}
+
+.hero-mid .img-container{
+    height: 80vh;
+    width: 100%;
+    /* background-color: yellow; */
+    /* padding: 0 1rem; */
+    margin-bottom: 1rem;
+    position: relative; 
+    z-index: 100;
+
+}
+.hero-mid .img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 100;
+    
+}
+.hero-mid p{
+    font-size: 0.875rem;
+    width: 50%;
+    line-height: 1.2;
+}
+
+.hero-mid .overlay-text {
+    position: absolute;
+    top: -14%;
+    left: -7%;
+    pointer-events: none;
+
+    /* FORCE THE TEXT TO THE VERY FRONT: */
+    z-index: 1000;      
+}
+.hero-mid .overlay-text h1{
+    font-size: 4vw;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.hero-right .btn-container{
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    /* background-color: red; */
+    width: fit-content;
+    margin-left: auto;
+    
+}
+.hero-right .btn-container button{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 1px solid #5e5e55;
+    cursor: pointer;
+}
+.hero-right .btn-container button i{
+    font-size: 1.2rem;
+    
+}
+.hero-right .btn-container p{
+    letter-spacing: -1px;
+    font-size: 0.875rem;
+    opacity: 0.8;
+}
+.motive{
+    display: flex;
+    padding: 1vw 6vw;
+}
+.motive-left{
+    width: 10%;
+}
+.motive-left h2{
+    font-size: 1.2rem;
+    opacity: 0.5;
+    font-weight: 600;
+}
+.motive-right{
+    width: 80%;
+    padding-top: 1.5rem;
+}
+
+.motive-right p{
+    font-size: 1.5rem;
+    text-align: right;
+    line-height: 1.9;
+}
+.motive-right p span{
+    display: inline-block;
+    height: 40px;
+    width: 80px;
+    /* background-color: yellow; */
+    border-radius: 2rem;
+    margin:  0 0.5rem;
+    margin-bottom: -0.75rem;
+
+}
+.motive-right p span:nth-child(1){
+    background-image: url("./images/bluegirl.jpg");
+    background-size: cover;
+    background-position: 60% center ;
+}
+.motive-right p span:nth-child(2){
+    background-image: url("./images/shaljam.jpg");
+    background-size: cover;
+    background-position: center ;
+    
+    
+}
+.motive-right p span:nth-child(3){
+    background-image: url("./images/grass.jpg");
+    background-size: cover;
+    background-position: center ;
+
+}
+.synergy-harmony{
+    height: 100vh;
+    width: 100%;
+    margin: 2vh 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 1vw 14vw;
+
+}
+.sh-left {
+    margin-left: 3vw; 
+}
+.sh-left .img-container{
+    height: 50vh;
+    width: 15vw;
+    margin-bottom: 1rem;
+}
+.sh-left .img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.sh-left .heading{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0.25rem;
+    
+}
+.sh-left h3{
+    font-weight: 500;
+}
+.sh-left p{
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.sh-right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.sh-right .img-container{
+    height: 80vh;
+    width: 25vw;
+    margin-bottom: 1rem;
+}
+.sh-right .img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.sh-right .heading{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0.25rem;
+
+    
+}
+.sh-right h3{
+    font-weight: 500;
+    text-align: right;
+}
+.sh-right p{
+    font-size: 0.875rem;
+    line-height: 1.4;
+    text-align: right;
+}
+.biodegradable{
+    height: 100vh;
+    width: 100%;
+    padding: 1vw 0;
+    display: flex;
+    gap: 2rem;
+}
+.biodegradable .img-container{
+    height: 80%;
+    width: 70%;
+}
+.biodegradable .img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center 80%;
+}
+.biodegradable .heading{
+    height: 80%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.biodegradable h3{
+    font-weight: 500;
+    width: 50%;
+    line-height: 1.1;
+  
+}
+.biodegradable p{
+    font-size: 0.875rem;
+    line-height: 1.4;
+    
+}
+.video-section{
+    position: relative;
+}
+
+.video-container video{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.overlay-btn-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+}
+.overlay-btn-container button{
+    padding: 0.8rem 1.2rem;
+    border-radius: 2rem;
+    border: 1px solid #5e5e5e;
+    cursor: pointer;
+}
+.overlay-btn-container p{
+    font-weight: 500;
+}
+
+.navlinks, .heroes{
+    will-change: transform;
+}
