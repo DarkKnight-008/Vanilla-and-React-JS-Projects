@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+*::selection{
+    background-color: black;
+    color: white;
+}
+html,body{
+    min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+main{
+    min-height: 100vh;
+    width: 100%;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+}
+.nav-items{
+    height: 80px;
+    width: 100%;
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 3.5vw;
+}
+.nav-items .logo{
+    height: 100%;
+    width: 12%;
+}
+.nav-items .logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+.nright{
+    display: flex;
+    gap: 1rem;
+}
+.nright a{
+    text-decoration: none;
+    color: black;
+}
+.nright a i{
+    font-size: 1.2rem;
+}
+.nright a i:hover{
+    font-weight: 600;
+}
+
+.hero{
+    width: 100%;
+    height: 80vh;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 12vw;
+}
+.hero h4{
+    font-weight: 400;
+}
+.hero .elem-box{
+    display: flex;
+    gap: 1.5rem;
+    line-height: 1.2;
+}
+
+.elem-box .elem h1{
+    font-size: 6vw;
+    -webkit-text-stroke: 1px #000;
+    color: transparent;
+    letter-spacing: -2px;
+}
+.elem-box .elem:hover h1{
+    color: black;
+}
+.hero-content{
+    padding: 1vw 12vw;
+    /* background-color: red; */
+}
+.hero-content .para-limit{
+    width: 50%;
+}
+.hero-content p{
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+
+.features-project{
+    padding: 1vw 12vw;
+    margin: 2.5vw 0;
+}
+.features-project .heading-desc{
+    display: flex;
+    flex-direction: column;
+}
+.features-project .heading-desc h2{
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 300;
+}
+.features-project .heading-desc h2:nth-child(2){
+    -webkit-text-stroke: 1px #000;
+    color: transparent;
+}
+.scroll-container{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: black; */
+    height: 100vh;
+}
+.scroll-container .scroll-left{
+    width: 45%;
+    height: 100%;
+    /* background-color: lightblue; */
+    overflow: hidden;
+    padding-left: 3vw;
+}
+
+.scroll-details{
+    height: 100%;
+    width: 100%;
+    /* background-color: lightcoral; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.scroll-container h3{
+    font-weight: 500;
+   
+}
+.scroll-details h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    width: 80%;
+}
+.scroll-details p{
+    opacity: 0.8;
+    width: 70%;
+}
+
+
+.scroll-container .scroll-right{
+    width: 45%;
+    height: 100%;
+    /* background-color: lightgreen; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.scroll-container .scroll-right .img-container{
+    /* background-color: yellow; */
+    height: 90%;
+    width: 90%;
+    overflow: hidden;
+    object-fit: contain;
+    object-position: center;
+
+}
+.scroll-container .scroll-right .img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.btn-container{
+    text-align: center;
+    margin-top: 3vw;
+}
+.btn-container button{
+    padding: 1.1rem 1.3rem;
+    border: 1px solid #5e5e55;
+    border-radius: 2rem;
+   font-size: 0.875rem;
+   letter-spacing: -0.5px;
+
+}
+.btn-container button:hover{
+   background-color: black;
+   color: white;
+
+}
+
+.development{
+    padding: 1vw 12vw;
+    margin: 2.5vw 0;
+}
+.development .heading-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.development .heading-desc .heading{
+    width: 30%;
+}
+.development .heading-desc .heading h1{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.development .heading-desc .desc{
+    width: 50%;
+}
+
+.blogs-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.blog{
+    border: 1px solid #c7c7c3;
+    height: fit-content;
+    border-radius:10px ;
+    overflow: hidden;
+}
+.blog .blog-img-container{
+    height: 50%;
+    width: 100%;
+    /* background-color: yellow; */
+    overflow: hidden;
+}
+.blog .blog-img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog-details{
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.blog-details .bage span{
+    display: inline-block;
+    padding: 0.6rem 1rem ;
+    background-color: rgb(219, 219, 219);
+    border-radius: 20rem;
+}
+
+.blog {
+    transition: all 0.3s ease;
+}
+.blog:hover{
+    transform: translateY(-3px);
+    box-shadow: 2px 2px 10px #dcdada;
+}
+
+.inspiration{
+    padding: 1vw 12vw;
+    margin: 2.5vw 0;
+}
+
+.inspiration .heading{
+    width: 30%;
+}
+.inspiration .heading h1{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.card{
+    border: 1px solid #c7c7c3;
+    min-height: 350px;
+    border-radius:10px ;
+    overflow: hidden;
+}
+
+.card .card-img-container{
+    height: 50%;
+    width: 100%;
+    /* background-color: yellow; */
+    overflow: hidden;
+}
+.card .card-img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-details{
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.card-details .title{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.card-details .title h4{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.card-details .desc p{
+    font-size: 0.75rem;
+}
+.card {
+    transition: all 0.3s ease;
+}
+.card:hover{
+    transform: translateY(-3px);
+    box-shadow: 2px 2px 10px #dcdada;
+}
