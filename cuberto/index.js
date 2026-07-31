@@ -166,7 +166,7 @@ const  generatingScrollDetails = ()=>{
 const mixeffect= ()=>{
 Shery.mouseFollower();
 Shery.hoverWithMediaCircle(".elem", {
-    videos:["/cuberto/videos/1.mp4","/cuberto/videos/2.mp4","/cuberto/videos/3.mp4"]
+    videos:["./videos/1.mp4", "./videos/2.mp4", "./videos/3.mp4"]
 })
 Shery.makeMagnet(".magnet")
 
